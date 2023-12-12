@@ -1,7 +1,1654 @@
-(()=>{var t={591:(t,e,r)=>{var n=r(8).default;function o(){"use strict";
-/*! regenerator-runtime -- Copyright (c) 2014-present, Facebook, Inc. -- license (MIT): https://github.com/facebook/regenerator/blob/main/LICENSE */t.exports=o=function(){return e},t.exports.__esModule=!0,t.exports.default=t.exports;var e={},r=Object.prototype,i=r.hasOwnProperty,a="function"==typeof Symbol?Symbol:{},c=a.iterator||"@@iterator",s=a.asyncIterator||"@@asyncIterator",u=a.toStringTag||"@@toStringTag";function l(t,e,r){return Object.defineProperty(t,e,{value:r,enumerable:!0,configurable:!0,writable:!0}),t[e]}try{l({},"")}catch(t){l=function(t,e,r){return t[e]=r}}function f(t,e,r,n){var o=e&&e.prototype instanceof d?e:d,i=Object.create(o.prototype),a=new k(n||[]);return i._invoke=function(t,e,r){var n="suspendedStart";return function(o,i){if("executing"===n)throw new Error("Generator is already running");if("completed"===n){if("throw"===o)throw i;return j()}for(r.method=o,r.arg=i;;){var a=r.delegate;if(a){var c=L(a,r);if(c){if(c===p)continue;return c}}if("next"===r.method)r.sent=r._sent=r.arg;else if("throw"===r.method){if("suspendedStart"===n)throw n="completed",r.arg;r.dispatchException(r.arg)}else"return"===r.method&&r.abrupt("return",r.arg);n="executing";var s=h(t,e,r);if("normal"===s.type){if(n=r.done?"completed":"suspendedYield",s.arg===p)continue;return{value:s.arg,done:r.done}}"throw"===s.type&&(n="completed",r.method="throw",r.arg=s.arg)}}}(t,r,a),i}function h(t,e,r){try{return{type:"normal",arg:t.call(e,r)}}catch(t){return{type:"throw",arg:t}}}e.wrap=f;var p={};function d(){}function v(){}function y(){}var g={};l(g,c,(function(){return this}));var m=Object.getPrototypeOf,w=m&&m(m(O([])));w&&w!==r&&i.call(w,c)&&(g=w);var b=y.prototype=d.prototype=Object.create(g);function x(t){["next","throw","return"].forEach((function(e){l(t,e,(function(t){return this._invoke(e,t)}))}))}function _(t,e){function r(o,a,c,s){var u=h(t[o],t,a);if("throw"!==u.type){var l=u.arg,f=l.value;return f&&"object"==n(f)&&i.call(f,"__await")?e.resolve(f.__await).then((function(t){r("next",t,c,s)}),(function(t){r("throw",t,c,s)})):e.resolve(f).then((function(t){l.value=t,c(l)}),(function(t){return r("throw",t,c,s)}))}s(u.arg)}var o;this._invoke=function(t,n){function i(){return new e((function(e,o){r(t,n,e,o)}))}return o=o?o.then(i,i):i()}}function L(t,e){var r=t.iterator[e.method];if(void 0===r){if(e.delegate=null,"throw"===e.method){if(t.iterator.return&&(e.method="return",e.arg=void 0,L(t,e),"throw"===e.method))return p;e.method="throw",e.arg=new TypeError("The iterator does not provide a 'throw' method")}return p}var n=h(r,t.iterator,e.arg);if("throw"===n.type)return e.method="throw",e.arg=n.arg,e.delegate=null,p;var o=n.arg;return o?o.done?(e[t.resultName]=o.value,e.next=t.nextLoc,"return"!==e.method&&(e.method="next",e.arg=void 0),e.delegate=null,p):o:(e.method="throw",e.arg=new TypeError("iterator result is not an object"),e.delegate=null,p)}function E(t){var e={tryLoc:t[0]};1 in t&&(e.catchLoc=t[1]),2 in t&&(e.finallyLoc=t[2],e.afterLoc=t[3]),this.tryEntries.push(e)}function S(t){var e=t.completion||{};e.type="normal",delete e.arg,t.completion=e}function k(t){this.tryEntries=[{tryLoc:"root"}],t.forEach(E,this),this.reset(!0)}function O(t){if(t){var e=t[c];if(e)return e.call(t);if("function"==typeof t.next)return t;if(!isNaN(t.length)){var r=-1,n=function e(){for(;++r<t.length;)if(i.call(t,r))return e.value=t[r],e.done=!1,e;return e.value=void 0,e.done=!0,e};return n.next=n}}return{next:j}}function j(){return{value:void 0,done:!0}}return v.prototype=y,l(b,"constructor",y),l(y,"constructor",v),v.displayName=l(y,u,"GeneratorFunction"),e.isGeneratorFunction=function(t){var e="function"==typeof t&&t.constructor;return!!e&&(e===v||"GeneratorFunction"===(e.displayName||e.name))},e.mark=function(t){return Object.setPrototypeOf?Object.setPrototypeOf(t,y):(t.__proto__=y,l(t,u,"GeneratorFunction")),t.prototype=Object.create(b),t},e.awrap=function(t){return{__await:t}},x(_.prototype),l(_.prototype,s,(function(){return this})),e.AsyncIterator=_,e.async=function(t,r,n,o,i){void 0===i&&(i=Promise);var a=new _(f(t,r,n,o),i);return e.isGeneratorFunction(r)?a:a.next().then((function(t){return t.done?t.value:a.next()}))},x(b),l(b,u,"Generator"),l(b,c,(function(){return this})),l(b,"toString",(function(){return"[object Generator]"})),e.keys=function(t){var e=[];for(var r in t)e.push(r);return e.reverse(),function r(){for(;e.length;){var n=e.pop();if(n in t)return r.value=n,r.done=!1,r}return r.done=!0,r}},e.values=O,k.prototype={constructor:k,reset:function(t){if(this.prev=0,this.next=0,this.sent=this._sent=void 0,this.done=!1,this.delegate=null,this.method="next",this.arg=void 0,this.tryEntries.forEach(S),!t)for(var e in this)"t"===e.charAt(0)&&i.call(this,e)&&!isNaN(+e.slice(1))&&(this[e]=void 0)},stop:function(){this.done=!0;var t=this.tryEntries[0].completion;if("throw"===t.type)throw t.arg;return this.rval},dispatchException:function(t){if(this.done)throw t;var e=this;function r(r,n){return a.type="throw",a.arg=t,e.next=r,n&&(e.method="next",e.arg=void 0),!!n}for(var n=this.tryEntries.length-1;n>=0;--n){var o=this.tryEntries[n],a=o.completion;if("root"===o.tryLoc)return r("end");if(o.tryLoc<=this.prev){var c=i.call(o,"catchLoc"),s=i.call(o,"finallyLoc");if(c&&s){if(this.prev<o.catchLoc)return r(o.catchLoc,!0);if(this.prev<o.finallyLoc)return r(o.finallyLoc)}else if(c){if(this.prev<o.catchLoc)return r(o.catchLoc,!0)}else{if(!s)throw new Error("try statement without catch or finally");if(this.prev<o.finallyLoc)return r(o.finallyLoc)}}}},abrupt:function(t,e){for(var r=this.tryEntries.length-1;r>=0;--r){var n=this.tryEntries[r];if(n.tryLoc<=this.prev&&i.call(n,"finallyLoc")&&this.prev<n.finallyLoc){var o=n;break}}o&&("break"===t||"continue"===t)&&o.tryLoc<=e&&e<=o.finallyLoc&&(o=null);var a=o?o.completion:{};return a.type=t,a.arg=e,o?(this.method="next",this.next=o.finallyLoc,p):this.complete(a)},complete:function(t,e){if("throw"===t.type)throw t.arg;return"break"===t.type||"continue"===t.type?this.next=t.arg:"return"===t.type?(this.rval=this.arg=t.arg,this.method="return",this.next="end"):"normal"===t.type&&e&&(this.next=e),p},finish:function(t){for(var e=this.tryEntries.length-1;e>=0;--e){var r=this.tryEntries[e];if(r.finallyLoc===t)return this.complete(r.completion,r.afterLoc),S(r),p}},catch:function(t){for(var e=this.tryEntries.length-1;e>=0;--e){var r=this.tryEntries[e];if(r.tryLoc===t){var n=r.completion;if("throw"===n.type){var o=n.arg;S(r)}return o}}throw new Error("illegal catch attempt")},delegateYield:function(t,e,r){return this.delegate={iterator:O(t),resultName:e,nextLoc:r},"next"===this.method&&(this.arg=void 0),p}},e}t.exports=o,t.exports.__esModule=!0,t.exports.default=t.exports},8:t=>{function e(r){return t.exports=e="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(t){return typeof t}:function(t){return t&&"function"==typeof Symbol&&t.constructor===Symbol&&t!==Symbol.prototype?"symbol":typeof t},t.exports.__esModule=!0,t.exports.default=t.exports,e(r)}t.exports=e,t.exports.__esModule=!0,t.exports.default=t.exports},757:(t,e,r)=>{t.exports=r(591)()}},e={};function r(n){var o=e[n];if(void 0!==o)return o.exports;var i=e[n]={exports:{}};return t[n](i,i.exports,r),i.exports}r.n=t=>{var e=t&&t.__esModule?()=>t.default:()=>t;return r.d(e,{a:e}),e},r.d=(t,e)=>{for(var n in e)r.o(e,n)&&!r.o(t,n)&&Object.defineProperty(t,n,{enumerable:!0,get:e[n]})},r.o=(t,e)=>Object.prototype.hasOwnProperty.call(t,e),(()=>{"use strict";function t(t,e,r,n,o,i,a){try{var c=t[i](a),s=c.value}catch(t){return void r(t)}c.done?e(s):Promise.resolve(s).then(n,o)}function e(e){return function(){var r=this,n=arguments;return new Promise((function(o,i){var a=e.apply(r,n);function c(e){t(a,o,i,c,s,"next",e)}function s(e){t(a,o,i,c,s,"throw",e)}c(void 0)}))}}function n(t,e){(null==e||e>t.length)&&(e=t.length);for(var r=0,n=new Array(e);r<e;r++)n[r]=t[r];return n}function o(t){return function(t){if(Array.isArray(t))return n(t)}(t)||function(t){if("undefined"!=typeof Symbol&&null!=t[Symbol.iterator]||null!=t["@@iterator"])return Array.from(t)}(t)||function(t,e){if(t){if("string"==typeof t)return n(t,e);var r=Object.prototype.toString.call(t).slice(8,-1);return"Object"===r&&t.constructor&&(r=t.constructor.name),"Map"===r||"Set"===r?Array.from(t):"Arguments"===r||/^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(r)?n(t,e):void 0}}(t)||function(){throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.")}()}var i=r(757),a=r.n(i);function c(t){return c="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(t){return typeof t}:function(t){return t&&"function"==typeof Symbol&&t.constructor===Symbol&&t!==Symbol.prototype?"symbol":typeof t},c(t)}function s(t,e){var r=arguments.length>2&&void 0!==arguments[2]?arguments[2]:[];return t?("object"!==c(t)||(void 0!==t[e]?r.push(t):Object.values(t).forEach((function(t){r.push.apply(r,o(s(t,e)))}))),r):r}function u(t){var e=t.id_str||t.conversation_id_str;if(!t.full_text)return e;var r=t.full_text.split("https://t.co")[0].trim().replace(/(\r\n|\n|\r)/gm,"").substr(0,50);return r||(r=e),r}function l(t){return"video"===t.type||"animated_gif"===t.type}function f(t,e){return h.apply(this,arguments)}function h(){return(h=e(a().mark((function t(e,r){return a().wrap((function(t){for(;;)switch(t.prev=t.next){case 0:return t.abrupt("return",fetch(e).then((function(t){return t.blob()})).then((function(t){var e=document.createElement("a");e.style.display="none",document.body.appendChild(e),e.href=window.URL.createObjectURL(t),e.setAttribute("target","_blank"),e.setAttribute("download","".concat(r,".mp4")),e.click(),window.URL.revokeObjectURL(e.href),document.body.removeChild(e)})));case 1:case"end":return t.stop()}}),t)})))).apply(this,arguments)}
+/******/ (() => { // webpackBootstrap
+/******/ 	var __webpack_modules__ = ({
+
+/***/ 591:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+var _typeof = (__webpack_require__(8)["default"]);
+
+function _regeneratorRuntime() {
+  "use strict";
+  /*! regenerator-runtime -- Copyright (c) 2014-present, Facebook, Inc. -- license (MIT): https://github.com/facebook/regenerator/blob/main/LICENSE */
+
+  module.exports = _regeneratorRuntime = function _regeneratorRuntime() {
+    return exports;
+  }, module.exports.__esModule = true, module.exports["default"] = module.exports;
+  var exports = {},
+      Op = Object.prototype,
+      hasOwn = Op.hasOwnProperty,
+      $Symbol = "function" == typeof Symbol ? Symbol : {},
+      iteratorSymbol = $Symbol.iterator || "@@iterator",
+      asyncIteratorSymbol = $Symbol.asyncIterator || "@@asyncIterator",
+      toStringTagSymbol = $Symbol.toStringTag || "@@toStringTag";
+
+  function define(obj, key, value) {
+    return Object.defineProperty(obj, key, {
+      value: value,
+      enumerable: !0,
+      configurable: !0,
+      writable: !0
+    }), obj[key];
+  }
+
+  try {
+    define({}, "");
+  } catch (err) {
+    define = function define(obj, key, value) {
+      return obj[key] = value;
+    };
+  }
+
+  function wrap(innerFn, outerFn, self, tryLocsList) {
+    var protoGenerator = outerFn && outerFn.prototype instanceof Generator ? outerFn : Generator,
+        generator = Object.create(protoGenerator.prototype),
+        context = new Context(tryLocsList || []);
+    return generator._invoke = function (innerFn, self, context) {
+      var state = "suspendedStart";
+      return function (method, arg) {
+        if ("executing" === state) throw new Error("Generator is already running");
+
+        if ("completed" === state) {
+          if ("throw" === method) throw arg;
+          return doneResult();
+        }
+
+        for (context.method = method, context.arg = arg;;) {
+          var delegate = context.delegate;
+
+          if (delegate) {
+            var delegateResult = maybeInvokeDelegate(delegate, context);
+
+            if (delegateResult) {
+              if (delegateResult === ContinueSentinel) continue;
+              return delegateResult;
+            }
+          }
+
+          if ("next" === context.method) context.sent = context._sent = context.arg;else if ("throw" === context.method) {
+            if ("suspendedStart" === state) throw state = "completed", context.arg;
+            context.dispatchException(context.arg);
+          } else "return" === context.method && context.abrupt("return", context.arg);
+          state = "executing";
+          var record = tryCatch(innerFn, self, context);
+
+          if ("normal" === record.type) {
+            if (state = context.done ? "completed" : "suspendedYield", record.arg === ContinueSentinel) continue;
+            return {
+              value: record.arg,
+              done: context.done
+            };
+          }
+
+          "throw" === record.type && (state = "completed", context.method = "throw", context.arg = record.arg);
+        }
+      };
+    }(innerFn, self, context), generator;
+  }
+
+  function tryCatch(fn, obj, arg) {
+    try {
+      return {
+        type: "normal",
+        arg: fn.call(obj, arg)
+      };
+    } catch (err) {
+      return {
+        type: "throw",
+        arg: err
+      };
+    }
+  }
+
+  exports.wrap = wrap;
+  var ContinueSentinel = {};
+
+  function Generator() {}
+
+  function GeneratorFunction() {}
+
+  function GeneratorFunctionPrototype() {}
+
+  var IteratorPrototype = {};
+  define(IteratorPrototype, iteratorSymbol, function () {
+    return this;
+  });
+  var getProto = Object.getPrototypeOf,
+      NativeIteratorPrototype = getProto && getProto(getProto(values([])));
+  NativeIteratorPrototype && NativeIteratorPrototype !== Op && hasOwn.call(NativeIteratorPrototype, iteratorSymbol) && (IteratorPrototype = NativeIteratorPrototype);
+  var Gp = GeneratorFunctionPrototype.prototype = Generator.prototype = Object.create(IteratorPrototype);
+
+  function defineIteratorMethods(prototype) {
+    ["next", "throw", "return"].forEach(function (method) {
+      define(prototype, method, function (arg) {
+        return this._invoke(method, arg);
+      });
+    });
+  }
+
+  function AsyncIterator(generator, PromiseImpl) {
+    function invoke(method, arg, resolve, reject) {
+      var record = tryCatch(generator[method], generator, arg);
+
+      if ("throw" !== record.type) {
+        var result = record.arg,
+            value = result.value;
+        return value && "object" == _typeof(value) && hasOwn.call(value, "__await") ? PromiseImpl.resolve(value.__await).then(function (value) {
+          invoke("next", value, resolve, reject);
+        }, function (err) {
+          invoke("throw", err, resolve, reject);
+        }) : PromiseImpl.resolve(value).then(function (unwrapped) {
+          result.value = unwrapped, resolve(result);
+        }, function (error) {
+          return invoke("throw", error, resolve, reject);
+        });
+      }
+
+      reject(record.arg);
+    }
+
+    var previousPromise;
+
+    this._invoke = function (method, arg) {
+      function callInvokeWithMethodAndArg() {
+        return new PromiseImpl(function (resolve, reject) {
+          invoke(method, arg, resolve, reject);
+        });
+      }
+
+      return previousPromise = previousPromise ? previousPromise.then(callInvokeWithMethodAndArg, callInvokeWithMethodAndArg) : callInvokeWithMethodAndArg();
+    };
+  }
+
+  function maybeInvokeDelegate(delegate, context) {
+    var method = delegate.iterator[context.method];
+
+    if (undefined === method) {
+      if (context.delegate = null, "throw" === context.method) {
+        if (delegate.iterator["return"] && (context.method = "return", context.arg = undefined, maybeInvokeDelegate(delegate, context), "throw" === context.method)) return ContinueSentinel;
+        context.method = "throw", context.arg = new TypeError("The iterator does not provide a 'throw' method");
+      }
+
+      return ContinueSentinel;
+    }
+
+    var record = tryCatch(method, delegate.iterator, context.arg);
+    if ("throw" === record.type) return context.method = "throw", context.arg = record.arg, context.delegate = null, ContinueSentinel;
+    var info = record.arg;
+    return info ? info.done ? (context[delegate.resultName] = info.value, context.next = delegate.nextLoc, "return" !== context.method && (context.method = "next", context.arg = undefined), context.delegate = null, ContinueSentinel) : info : (context.method = "throw", context.arg = new TypeError("iterator result is not an object"), context.delegate = null, ContinueSentinel);
+  }
+
+  function pushTryEntry(locs) {
+    var entry = {
+      tryLoc: locs[0]
+    };
+    1 in locs && (entry.catchLoc = locs[1]), 2 in locs && (entry.finallyLoc = locs[2], entry.afterLoc = locs[3]), this.tryEntries.push(entry);
+  }
+
+  function resetTryEntry(entry) {
+    var record = entry.completion || {};
+    record.type = "normal", delete record.arg, entry.completion = record;
+  }
+
+  function Context(tryLocsList) {
+    this.tryEntries = [{
+      tryLoc: "root"
+    }], tryLocsList.forEach(pushTryEntry, this), this.reset(!0);
+  }
+
+  function values(iterable) {
+    if (iterable) {
+      var iteratorMethod = iterable[iteratorSymbol];
+      if (iteratorMethod) return iteratorMethod.call(iterable);
+      if ("function" == typeof iterable.next) return iterable;
+
+      if (!isNaN(iterable.length)) {
+        var i = -1,
+            next = function next() {
+          for (; ++i < iterable.length;) {
+            if (hasOwn.call(iterable, i)) return next.value = iterable[i], next.done = !1, next;
+          }
+
+          return next.value = undefined, next.done = !0, next;
+        };
+
+        return next.next = next;
+      }
+    }
+
+    return {
+      next: doneResult
+    };
+  }
+
+  function doneResult() {
+    return {
+      value: undefined,
+      done: !0
+    };
+  }
+
+  return GeneratorFunction.prototype = GeneratorFunctionPrototype, define(Gp, "constructor", GeneratorFunctionPrototype), define(GeneratorFunctionPrototype, "constructor", GeneratorFunction), GeneratorFunction.displayName = define(GeneratorFunctionPrototype, toStringTagSymbol, "GeneratorFunction"), exports.isGeneratorFunction = function (genFun) {
+    var ctor = "function" == typeof genFun && genFun.constructor;
+    return !!ctor && (ctor === GeneratorFunction || "GeneratorFunction" === (ctor.displayName || ctor.name));
+  }, exports.mark = function (genFun) {
+    return Object.setPrototypeOf ? Object.setPrototypeOf(genFun, GeneratorFunctionPrototype) : (genFun.__proto__ = GeneratorFunctionPrototype, define(genFun, toStringTagSymbol, "GeneratorFunction")), genFun.prototype = Object.create(Gp), genFun;
+  }, exports.awrap = function (arg) {
+    return {
+      __await: arg
+    };
+  }, defineIteratorMethods(AsyncIterator.prototype), define(AsyncIterator.prototype, asyncIteratorSymbol, function () {
+    return this;
+  }), exports.AsyncIterator = AsyncIterator, exports.async = function (innerFn, outerFn, self, tryLocsList, PromiseImpl) {
+    void 0 === PromiseImpl && (PromiseImpl = Promise);
+    var iter = new AsyncIterator(wrap(innerFn, outerFn, self, tryLocsList), PromiseImpl);
+    return exports.isGeneratorFunction(outerFn) ? iter : iter.next().then(function (result) {
+      return result.done ? result.value : iter.next();
+    });
+  }, defineIteratorMethods(Gp), define(Gp, toStringTagSymbol, "Generator"), define(Gp, iteratorSymbol, function () {
+    return this;
+  }), define(Gp, "toString", function () {
+    return "[object Generator]";
+  }), exports.keys = function (object) {
+    var keys = [];
+
+    for (var key in object) {
+      keys.push(key);
+    }
+
+    return keys.reverse(), function next() {
+      for (; keys.length;) {
+        var key = keys.pop();
+        if (key in object) return next.value = key, next.done = !1, next;
+      }
+
+      return next.done = !0, next;
+    };
+  }, exports.values = values, Context.prototype = {
+    constructor: Context,
+    reset: function reset(skipTempReset) {
+      if (this.prev = 0, this.next = 0, this.sent = this._sent = undefined, this.done = !1, this.delegate = null, this.method = "next", this.arg = undefined, this.tryEntries.forEach(resetTryEntry), !skipTempReset) for (var name in this) {
+        "t" === name.charAt(0) && hasOwn.call(this, name) && !isNaN(+name.slice(1)) && (this[name] = undefined);
+      }
+    },
+    stop: function stop() {
+      this.done = !0;
+      var rootRecord = this.tryEntries[0].completion;
+      if ("throw" === rootRecord.type) throw rootRecord.arg;
+      return this.rval;
+    },
+    dispatchException: function dispatchException(exception) {
+      if (this.done) throw exception;
+      var context = this;
+
+      function handle(loc, caught) {
+        return record.type = "throw", record.arg = exception, context.next = loc, caught && (context.method = "next", context.arg = undefined), !!caught;
+      }
+
+      for (var i = this.tryEntries.length - 1; i >= 0; --i) {
+        var entry = this.tryEntries[i],
+            record = entry.completion;
+        if ("root" === entry.tryLoc) return handle("end");
+
+        if (entry.tryLoc <= this.prev) {
+          var hasCatch = hasOwn.call(entry, "catchLoc"),
+              hasFinally = hasOwn.call(entry, "finallyLoc");
+
+          if (hasCatch && hasFinally) {
+            if (this.prev < entry.catchLoc) return handle(entry.catchLoc, !0);
+            if (this.prev < entry.finallyLoc) return handle(entry.finallyLoc);
+          } else if (hasCatch) {
+            if (this.prev < entry.catchLoc) return handle(entry.catchLoc, !0);
+          } else {
+            if (!hasFinally) throw new Error("try statement without catch or finally");
+            if (this.prev < entry.finallyLoc) return handle(entry.finallyLoc);
+          }
+        }
+      }
+    },
+    abrupt: function abrupt(type, arg) {
+      for (var i = this.tryEntries.length - 1; i >= 0; --i) {
+        var entry = this.tryEntries[i];
+
+        if (entry.tryLoc <= this.prev && hasOwn.call(entry, "finallyLoc") && this.prev < entry.finallyLoc) {
+          var finallyEntry = entry;
+          break;
+        }
+      }
+
+      finallyEntry && ("break" === type || "continue" === type) && finallyEntry.tryLoc <= arg && arg <= finallyEntry.finallyLoc && (finallyEntry = null);
+      var record = finallyEntry ? finallyEntry.completion : {};
+      return record.type = type, record.arg = arg, finallyEntry ? (this.method = "next", this.next = finallyEntry.finallyLoc, ContinueSentinel) : this.complete(record);
+    },
+    complete: function complete(record, afterLoc) {
+      if ("throw" === record.type) throw record.arg;
+      return "break" === record.type || "continue" === record.type ? this.next = record.arg : "return" === record.type ? (this.rval = this.arg = record.arg, this.method = "return", this.next = "end") : "normal" === record.type && afterLoc && (this.next = afterLoc), ContinueSentinel;
+    },
+    finish: function finish(finallyLoc) {
+      for (var i = this.tryEntries.length - 1; i >= 0; --i) {
+        var entry = this.tryEntries[i];
+        if (entry.finallyLoc === finallyLoc) return this.complete(entry.completion, entry.afterLoc), resetTryEntry(entry), ContinueSentinel;
+      }
+    },
+    "catch": function _catch(tryLoc) {
+      for (var i = this.tryEntries.length - 1; i >= 0; --i) {
+        var entry = this.tryEntries[i];
+
+        if (entry.tryLoc === tryLoc) {
+          var record = entry.completion;
+
+          if ("throw" === record.type) {
+            var thrown = record.arg;
+            resetTryEntry(entry);
+          }
+
+          return thrown;
+        }
+      }
+
+      throw new Error("illegal catch attempt");
+    },
+    delegateYield: function delegateYield(iterable, resultName, nextLoc) {
+      return this.delegate = {
+        iterator: values(iterable),
+        resultName: resultName,
+        nextLoc: nextLoc
+      }, "next" === this.method && (this.arg = undefined), ContinueSentinel;
+    }
+  }, exports;
+}
+
+module.exports = _regeneratorRuntime, module.exports.__esModule = true, module.exports["default"] = module.exports;
+
+/***/ }),
+
+/***/ 8:
+/***/ ((module) => {
+
+function _typeof(obj) {
+  "@babel/helpers - typeof";
+
+  return (module.exports = _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) {
+    return typeof obj;
+  } : function (obj) {
+    return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;
+  }, module.exports.__esModule = true, module.exports["default"] = module.exports), _typeof(obj);
+}
+
+module.exports = _typeof, module.exports.__esModule = true, module.exports["default"] = module.exports;
+
+/***/ }),
+
+/***/ 757:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__(591)();
+
+
+/***/ })
+
+/******/ 	});
+/************************************************************************/
+/******/ 	// The module cache
+/******/ 	var __webpack_module_cache__ = {};
+/******/ 	
+/******/ 	// The require function
+/******/ 	function __webpack_require__(moduleId) {
+/******/ 		// Check if module is in cache
+/******/ 		var cachedModule = __webpack_module_cache__[moduleId];
+/******/ 		if (cachedModule !== undefined) {
+/******/ 			return cachedModule.exports;
+/******/ 		}
+/******/ 		// Create a new module (and put it into the cache)
+/******/ 		var module = __webpack_module_cache__[moduleId] = {
+/******/ 			// no module.id needed
+/******/ 			// no module.loaded needed
+/******/ 			exports: {}
+/******/ 		};
+/******/ 	
+/******/ 		// Execute the module function
+/******/ 		__webpack_modules__[moduleId](module, module.exports, __webpack_require__);
+/******/ 	
+/******/ 		// Return the exports of the module
+/******/ 		return module.exports;
+/******/ 	}
+/******/ 	
+/************************************************************************/
+/******/ 	/* webpack/runtime/compat get default export */
+/******/ 	(() => {
+/******/ 		// getDefaultExport function for compatibility with non-harmony modules
+/******/ 		__webpack_require__.n = (module) => {
+/******/ 			var getter = module && module.__esModule ?
+/******/ 				() => (module['default']) :
+/******/ 				() => (module);
+/******/ 			__webpack_require__.d(getter, { a: getter });
+/******/ 			return getter;
+/******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/define property getters */
+/******/ 	(() => {
+/******/ 		// define getter functions for harmony exports
+/******/ 		__webpack_require__.d = (exports, definition) => {
+/******/ 			for(var key in definition) {
+/******/ 				if(__webpack_require__.o(definition, key) && !__webpack_require__.o(exports, key)) {
+/******/ 					Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
+/******/ 				}
+/******/ 			}
+/******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/hasOwnProperty shorthand */
+/******/ 	(() => {
+/******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
+/******/ 	})();
+/******/ 	
+/************************************************************************/
+var __webpack_exports__ = {};
+// This entry need to be wrapped in an IIFE because it need to be in strict mode.
+(() => {
+"use strict";
+
+;// CONCATENATED MODULE: ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js
+function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) {
+  try {
+    var info = gen[key](arg);
+    var value = info.value;
+  } catch (error) {
+    reject(error);
+    return;
+  }
+
+  if (info.done) {
+    resolve(value);
+  } else {
+    Promise.resolve(value).then(_next, _throw);
+  }
+}
+
+function _asyncToGenerator(fn) {
+  return function () {
+    var self = this,
+        args = arguments;
+    return new Promise(function (resolve, reject) {
+      var gen = fn.apply(self, args);
+
+      function _next(value) {
+        asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value);
+      }
+
+      function _throw(err) {
+        asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err);
+      }
+
+      _next(undefined);
+    });
+  };
+}
+;// CONCATENATED MODULE: ./node_modules/@babel/runtime/helpers/esm/arrayLikeToArray.js
+function _arrayLikeToArray(arr, len) {
+  if (len == null || len > arr.length) len = arr.length;
+
+  for (var i = 0, arr2 = new Array(len); i < len; i++) {
+    arr2[i] = arr[i];
+  }
+
+  return arr2;
+}
+;// CONCATENATED MODULE: ./node_modules/@babel/runtime/helpers/esm/arrayWithoutHoles.js
+
+function _arrayWithoutHoles(arr) {
+  if (Array.isArray(arr)) return _arrayLikeToArray(arr);
+}
+;// CONCATENATED MODULE: ./node_modules/@babel/runtime/helpers/esm/iterableToArray.js
+function _iterableToArray(iter) {
+  if (typeof Symbol !== "undefined" && iter[Symbol.iterator] != null || iter["@@iterator"] != null) return Array.from(iter);
+}
+;// CONCATENATED MODULE: ./node_modules/@babel/runtime/helpers/esm/unsupportedIterableToArray.js
+
+function _unsupportedIterableToArray(o, minLen) {
+  if (!o) return;
+  if (typeof o === "string") return _arrayLikeToArray(o, minLen);
+  var n = Object.prototype.toString.call(o).slice(8, -1);
+  if (n === "Object" && o.constructor) n = o.constructor.name;
+  if (n === "Map" || n === "Set") return Array.from(o);
+  if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen);
+}
+;// CONCATENATED MODULE: ./node_modules/@babel/runtime/helpers/esm/nonIterableSpread.js
+function _nonIterableSpread() {
+  throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
+}
+;// CONCATENATED MODULE: ./node_modules/@babel/runtime/helpers/esm/toConsumableArray.js
+
+
+
+
+function _toConsumableArray(arr) {
+  return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread();
+}
+// EXTERNAL MODULE: ./node_modules/@babel/runtime/regenerator/index.js
+var regenerator = __webpack_require__(757);
+var regenerator_default = /*#__PURE__*/__webpack_require__.n(regenerator);
+;// CONCATENATED MODULE: ./src/content/xhr.js
+/* harmony default export */ function xhr(callback) {
+  var xhrOpen = XMLHttpRequest.prototype.open;
+
+  XMLHttpRequest.prototype.open = function (_, requestUrl) {
+    // 限定一下范围，监听 tweet 详情页的数据就好
+    if ( // /(api\.)?twitter\.com\/(i\/api\/)?(2|graphql|1\.1)\//i.test(requestUrl)
+    /^https:\/\/twitter.com\/i\/api\/graphql\/[\w-]+\/TweetDetail/.test(requestUrl)) {
+      console.log("[TEST LOG] xhr requestUrl:", requestUrl);
+      var xhrSend = this.send;
+
+      this.send = function () {
+        var xhrStateChange = this.onreadystatechange;
+
+        this.onreadystatechange = function () {
+          var readyState = this.readyState,
+              responseText = this.responseText;
+
+          if (readyState === XMLHttpRequest.DONE && responseText) {
+            try {
+              callback(JSON.parse(responseText));
+            } catch (e) {
+              console.log(e);
+            }
+          }
+
+          return xhrStateChange.apply(this, arguments);
+        };
+
+        return xhrSend.apply(this, arguments);
+      };
+    }
+
+    return xhrOpen.apply(this, arguments);
+  };
+}
+;// CONCATENATED MODULE: ./node_modules/@babel/runtime/helpers/esm/typeof.js
+function _typeof(obj) {
+  "@babel/helpers - typeof";
+
+  return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) {
+    return typeof obj;
+  } : function (obj) {
+    return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;
+  }, _typeof(obj);
+}
+;// CONCATENATED MODULE: ./src/content/parse.js
+
+
+/* harmony default export */ function parse(response) {
+  console.log("[TEST LOG] parseRequest response:", response); // tweet entites
+
+  var entities = _toConsumableArray(find(response, "extended_entities"));
+
+  console.log("[TEST LOG] parseRequest entities:", entities); // tweet card entites
+
+  var cards = _toConsumableArray(find(response, "string_value")).map(function (value) {
+    try {
+      var parsedValue = JSON.parse(value.string_value);
+      var mediaEntity = Object.values(parsedValue.media_entities).filter(function (media) {
+        return ["video", "animated_gif"].indexOf(media.type) > -1;
+      }).shift();
+
+      if (mediaEntity) {
+        return {
+          extended_entities: {
+            media: [mediaEntity]
+          },
+          id_str: mediaEntity.id_str
+        };
+      }
+    } catch (e) {
+      return false;
+    }
+
+    return false;
+  }).filter(Boolean);
+
+  console.log("[TEST LOG] parseRequest cards:", cards);
+  return [].concat(_toConsumableArray(cards), _toConsumableArray(entities)).filter(function (entity) {
+    return entity.extended_entities.media.filter(checkMediaHasVideo).length;
+  }).flatMap(function (entity) {
+    var entityId = entity.id_str || entity.conversation_id_str;
+    var media = entity.extended_entities.media;
+    return media.filter(checkMediaHasVideo).map(function (item) {
+      var video = item.video_info.variants.filter(function (variant) {
+        return variant.content_type === "video/mp4";
+      }).sort(function (first, second) {
+        return second.bitrate - first.bitrate;
+      }).shift();
+      return {
+        id: item.id_str,
+        type: item.type,
+        // 资源类型，video or animated_gif
+        entityId: entityId,
+        photo: item.media_url_https,
+        // 视频封面图
+        video: video.url,
+        width: item.original_info.width,
+        height: item.original_info.height,
+        text: textify(entity)
+      };
+    });
+  }).filter(function (video, index, self) {
+    return self.indexOf(video) === index;
+  });
+}
+
+function find(source, key) {
+  var list = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : [];
+
+  if (!source) {
+    return list;
+  }
+
+  if (_typeof(source) !== "object") {
+    return list;
+  }
+
+  if (typeof source[key] !== "undefined") {
+    list.push(source);
+  } else {
+    Object.values(source).forEach(function (deep) {
+      list.push.apply(list, _toConsumableArray(find(deep, key)));
+    });
+  }
+
+  return list;
+}
+
+function textify(entity) {
+  var entityId = entity.id_str || entity.conversation_id_str;
+
+  if (!entity.full_text) {
+    return entityId;
+  }
+
+  var text = entity.full_text.split("https://t.co")[0].trim().replace(/(\r\n|\n|\r)/gm, "").substr(0, 50);
+
+  if (!text) {
+    text = entityId;
+  }
+
+  return text;
+}
+
+function checkMediaHasVideo(media) {
+  console.log("[TEST LOG] checkMediaHasVideo media.type:", media.type);
+  return media.type === "video" || media.type === "animated_gif";
+}
+;// CONCATENATED MODULE: ./src/content/download.js
+
+
+/* harmony default export */ function download(_x, _x2) {
+  return _ref.apply(this, arguments);
+}
+
+function _ref() {
+  _ref = _asyncToGenerator( /*#__PURE__*/regenerator_default().mark(function _callee(url, name) {
+    return regenerator_default().wrap(function _callee$(_context) {
+      while (1) {
+        switch (_context.prev = _context.next) {
+          case 0:
+            return _context.abrupt("return", fetch(url).then(function (response) {
+              return response.blob();
+            }).then(function (response) {
+              var element = document.createElement("a");
+              element.style.display = "none";
+              document.body.appendChild(element);
+              element.href = window.URL.createObjectURL(response);
+              element.setAttribute("target", "_blank");
+              element.setAttribute("download", "".concat(name, ".mp4"));
+              element.click();
+              window.URL.revokeObjectURL(element.href);
+              document.body.removeChild(element);
+            }));
+
+          case 1:
+          case "end":
+            return _context.stop();
+        }
+      }
+    }, _callee);
+  }));
+  return _ref.apply(this, arguments);
+}
+;// CONCATENATED MODULE: ./src/content/observe.js
+/* harmony default export */ function observe(callback) {
+  var observer = new MutationObserver(function (mutations) {
+    mutations.forEach(function (mutation) {
+      mutation.addedNodes.forEach(function ($element) {
+        if ($element instanceof HTMLElement === false) {
+          return false;
+        }
+
+        if ($element.nodeName === "IMG") {
+          var $container = $element.closest("article[role='article']");
+
+          if ($container) {
+            var $group = $container.querySelector("[role='group']:last-child");
+
+            if ($group) {
+              callback({
+                $image: $element,
+                $group: $group
+              });
+            }
+          }
+        }
+      });
+    });
+  });
+  observer.observe(document, {
+    childList: true,
+    subtree: true
+  });
+}
+;// CONCATENATED MODULE: ./src/content/button.html
+// Module
+var code = "<div class=\"extension-button-container\"> <div class=\"extension-button-hover\"></div> <svg class=\"download-icon\" width=\"{{ width }}\" height=\"{{ height }}\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"> <g> <path d=\"M11.99 16l-5.7-5.7L7.7 8.88l3.29 3.3V2.59h2v9.59l3.3-3.3 1.41 1.42-5.71 5.7zM21 15l-.02 3.51c0 1.38-1.12 2.49-2.5 2.49H5.5C4.11 21 3 19.88 3 18.5V15h2v3.5c0 .28.22.5.5.5h12.98c.28 0 .5-.22.5-.5L19 15h2z\"> </path> </g> </svg> <svg class=\"loading-icon\" viewBox=\"0 0 32 32\" aria-hidden=\"true\" width=\"{{ width }}\" height=\"{{ height }}\"> <circle cx=\"16\" cy=\"16\" fill=\"none\" r=\"14\" stroke-width=\"4\"></circle> <circle cx=\"16\" cy=\"16\" fill=\"none\" r=\"14\" stroke-width=\"4\"></circle> </svg> <svg class=\"success-icon\" viewBox=\"0 0 24 24\" aria-hidden=\"true\" width=\"{{ width }}\" height=\"{{ height }}\"> <g> <path d=\"M9 20c-.264 0-.52-.104-.707-.293l-4.785-4.785c-.39-.39-.39-1.023 0-1.414s1.023-.39 1.414 0l3.946 3.945L18.075 4.41c.32-.45.94-.558 1.395-.24.45.318.56.942.24 1.394L9.817 19.577c-.17.24-.438.395-.732.42-.028.002-.057.003-.085.003z\"> </path> </g> </svg> </div>";
+// Exports
+/* harmony default export */ const content_button = (code);
+;// CONCATENATED MODULE: ./node_modules/mustache/mustache.mjs
 /*!
  * mustache.js - Logic-less {{mustache}} templates with JavaScript
  * http://github.com/janl/mustache.js
  */
-var p=Object.prototype.toString,d=Array.isArray||function(t){return"[object Array]"===p.call(t)};function v(t){return"function"==typeof t}function y(t){return t.replace(/[\-\[\]{}()*+?.,\\\^$|#\s]/g,"\\$&")}function g(t,e){return null!=t&&"object"==typeof t&&e in t}var m=RegExp.prototype.test;var w=/\S/;function b(t){return!function(t,e){return m.call(t,e)}(w,t)}var x={"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;","/":"&#x2F;","`":"&#x60;","=":"&#x3D;"};var _=/\s*/,L=/\s+/,E=/\s*=/,S=/\s*\}/,k=/#|\^|\/|>|\{|&|=|!/;function O(t){this.string=t,this.tail=t,this.pos=0}function j(t,e){this.view=t,this.cache={".":this.view},this.parent=e}function C(){this.templateCache={_cache:{},set:function(t,e){this._cache[t]=e},get:function(t){return this._cache[t]},clear:function(){this._cache={}}}}O.prototype.eos=function(){return""===this.tail},O.prototype.scan=function(t){var e=this.tail.match(t);if(!e||0!==e.index)return"";var r=e[0];return this.tail=this.tail.substring(r.length),this.pos+=r.length,r},O.prototype.scanUntil=function(t){var e,r=this.tail.search(t);switch(r){case-1:e=this.tail,this.tail="";break;case 0:e="";break;default:e=this.tail.substring(0,r),this.tail=this.tail.substring(r)}return this.pos+=e.length,e},j.prototype.push=function(t){return new j(t,this)},j.prototype.lookup=function(t){var e,r,n,o=this.cache;if(o.hasOwnProperty(t))e=o[t];else{for(var i,a,c,s=this,u=!1;s;){if(t.indexOf(".")>0)for(i=s.view,a=t.split("."),c=0;null!=i&&c<a.length;)c===a.length-1&&(u=g(i,a[c])||(r=i,n=a[c],null!=r&&"object"!=typeof r&&r.hasOwnProperty&&r.hasOwnProperty(n))),i=i[a[c++]];else i=s.view[t],u=g(s.view,t);if(u){e=i;break}s=s.parent}o[t]=e}return v(e)&&(e=e.call(this.view)),e},C.prototype.clearCache=function(){void 0!==this.templateCache&&this.templateCache.clear()},C.prototype.parse=function(t,e){var r=this.templateCache,n=t+":"+(e||A.tags).join(":"),o=void 0!==r,i=o?r.get(n):void 0;return null==i&&(i=function(t,e){if(!t)return[];var r,n,o,i=!1,a=[],c=[],s=[],u=!1,l=!1,f="",h=0;function p(){if(u&&!l)for(;s.length;)delete c[s.pop()];else s=[];u=!1,l=!1}function v(t){if("string"==typeof t&&(t=t.split(L,2)),!d(t)||2!==t.length)throw new Error("Invalid tags: "+t);r=new RegExp(y(t[0])+"\\s*"),n=new RegExp("\\s*"+y(t[1])),o=new RegExp("\\s*"+y("}"+t[1]))}v(e||A.tags);for(var g,m,w,x,j,C,T=new O(t);!T.eos();){if(g=T.pos,w=T.scanUntil(r))for(var I=0,M=w.length;I<M;++I)b(x=w.charAt(I))?(s.push(c.length),f+=x):(l=!0,i=!0,f+=" "),c.push(["text",x,g,g+1]),g+=1,"\n"===x&&(p(),f="",h=0,i=!1);if(!T.scan(r))break;if(u=!0,m=T.scan(k)||"name",T.scan(_),"="===m?(w=T.scanUntil(E),T.scan(E),T.scanUntil(n)):"{"===m?(w=T.scanUntil(o),T.scan(S),T.scanUntil(n),m="&"):w=T.scanUntil(n),!T.scan(n))throw new Error("Unclosed tag at "+T.pos);if(j=">"==m?[m,w,g,T.pos,f,h,i]:[m,w,g,T.pos],h++,c.push(j),"#"===m||"^"===m)a.push(j);else if("/"===m){if(!(C=a.pop()))throw new Error('Unopened section "'+w+'" at '+g);if(C[1]!==w)throw new Error('Unclosed section "'+C[1]+'" at '+g)}else"name"===m||"{"===m||"&"===m?l=!0:"="===m&&v(w)}if(p(),C=a.pop())throw new Error('Unclosed section "'+C[1]+'" at '+T.pos);return function(t){for(var e,r=[],n=r,o=[],i=0,a=t.length;i<a;++i)switch((e=t[i])[0]){case"#":case"^":n.push(e),o.push(e),n=e[4]=[];break;case"/":o.pop()[5]=e[2],n=o.length>0?o[o.length-1][4]:r;break;default:n.push(e)}return r}(function(t){for(var e,r,n=[],o=0,i=t.length;o<i;++o)(e=t[o])&&("text"===e[0]&&r&&"text"===r[0]?(r[1]+=e[1],r[3]=e[3]):(n.push(e),r=e));return n}(c))}(t,e),o&&r.set(n,i)),i},C.prototype.render=function(t,e,r,n){var o=this.getConfigTags(n),i=this.parse(t,o),a=e instanceof j?e:new j(e,void 0);return this.renderTokens(i,a,r,t,n)},C.prototype.renderTokens=function(t,e,r,n,o){for(var i,a,c,s="",u=0,l=t.length;u<l;++u)c=void 0,"#"===(a=(i=t[u])[0])?c=this.renderSection(i,e,r,n,o):"^"===a?c=this.renderInverted(i,e,r,n,o):">"===a?c=this.renderPartial(i,e,r,o):"&"===a?c=this.unescapedValue(i,e):"name"===a?c=this.escapedValue(i,e,o):"text"===a&&(c=this.rawValue(i)),void 0!==c&&(s+=c);return s},C.prototype.renderSection=function(t,e,r,n,o){var i=this,a="",c=e.lookup(t[1]);if(c){if(d(c))for(var s=0,u=c.length;s<u;++s)a+=this.renderTokens(t[4],e.push(c[s]),r,n,o);else if("object"==typeof c||"string"==typeof c||"number"==typeof c)a+=this.renderTokens(t[4],e.push(c),r,n,o);else if(v(c)){if("string"!=typeof n)throw new Error("Cannot use higher-order sections without the original template");null!=(c=c.call(e.view,n.slice(t[3],t[5]),(function(t){return i.render(t,e,r,o)})))&&(a+=c)}else a+=this.renderTokens(t[4],e,r,n,o);return a}},C.prototype.renderInverted=function(t,e,r,n,o){var i=e.lookup(t[1]);if(!i||d(i)&&0===i.length)return this.renderTokens(t[4],e,r,n,o)},C.prototype.indentPartial=function(t,e,r){for(var n=e.replace(/[^ \t]/g,""),o=t.split("\n"),i=0;i<o.length;i++)o[i].length&&(i>0||!r)&&(o[i]=n+o[i]);return o.join("\n")},C.prototype.renderPartial=function(t,e,r,n){if(r){var o=this.getConfigTags(n),i=v(r)?r(t[1]):r[t[1]];if(null!=i){var a=t[6],c=t[5],s=t[4],u=i;0==c&&s&&(u=this.indentPartial(i,s,a));var l=this.parse(u,o);return this.renderTokens(l,e,r,u,n)}}},C.prototype.unescapedValue=function(t,e){var r=e.lookup(t[1]);if(null!=r)return r},C.prototype.escapedValue=function(t,e,r){var n=this.getConfigEscape(r)||A.escape,o=e.lookup(t[1]);if(null!=o)return"number"==typeof o&&n===A.escape?String(o):n(o)},C.prototype.rawValue=function(t){return t[1]},C.prototype.getConfigTags=function(t){return d(t)?t:t&&"object"==typeof t?t.tags:void 0},C.prototype.getConfigEscape=function(t){return t&&"object"==typeof t&&!d(t)?t.escape:void 0};var A={name:"mustache.js",version:"4.2.0",tags:["{{","}}"],clearCache:void 0,escape:void 0,parse:void 0,render:void 0,Scanner:void 0,Context:void 0,Writer:void 0,set templateCache(t){T.templateCache=t},get templateCache(){return T.templateCache}},T=new C;A.clearCache=function(){return T.clearCache()},A.parse=function(t,e){return T.parse(t,e)},A.render=function(t,e,r,n){if("string"!=typeof t)throw new TypeError('Invalid template! Template should be a "string" but "'+((d(o=t)?"array":typeof o)+'" was given as the first argument for mustache#render(template, view, partials)'));var o;return T.render(t,e,r,n)},A.escape=function(t){return String(t).replace(/[&<>"'`=\/]/g,(function(t){return x[t]}))},A.Scanner=O,A.Context=j,A.Writer=C;const I=A;function M(t,e){var r="undefined"!=typeof Symbol&&t[Symbol.iterator]||t["@@iterator"];if(!r){if(Array.isArray(t)||(r=function(t,e){if(!t)return;if("string"==typeof t)return P(t,e);var r=Object.prototype.toString.call(t).slice(8,-1);"Object"===r&&t.constructor&&(r=t.constructor.name);if("Map"===r||"Set"===r)return Array.from(t);if("Arguments"===r||/^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(r))return P(t,e)}(t))||e&&t&&"number"==typeof t.length){r&&(t=r);var n=0,o=function(){};return{s:o,n:function(){return n>=t.length?{done:!0}:{done:!1,value:t[n++]}},e:function(t){throw t},f:o}}throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.")}var i,a=!0,c=!1;return{s:function(){r=r.call(t)},n:function(){var t=r.next();return a=t.done,t},e:function(t){c=!0,i=t},f:function(){try{a||null==r.return||r.return()}finally{if(c)throw i}}}}function P(t,e){(null==e||e>t.length)&&(e=t.length);for(var r=0,n=new Array(e);r<e;r++)n[r]=t[r];return n}var U,N,R=[];U=function(t){var e=function(t){var e=o(s(t,"extended_entities")),r=o(s(t,"string_value")).map((function(t){try{var e=JSON.parse(t.string_value),r=Object.values(e.media_entities).filter((function(t){return["video","animated_gif"].indexOf(t.type)>-1})).shift();if(r)return{extended_entities:{media:[r]},id_str:r.id_str}}catch(t){return!1}return!1})).filter(Boolean);return[].concat(o(r),o(e)).filter((function(t){return t.extended_entities.media.filter(l).length})).flatMap((function(t){var e=t.id_str||t.conversation_id_str;return t.extended_entities.media.filter(l).map((function(r){var n=r.video_info.variants.filter((function(t){return"video/mp4"===t.content_type})).sort((function(t,e){return e.bitrate-t.bitrate})).shift();return{id:r.id_str,entityId:e,photo:r.media_url_https.substr(0,r.media_url_https.lastIndexOf(".")),video:n.url,text:u(t)}}))})).filter((function(t,e,r){return r.indexOf(t)===e}))}(t);e.length&&R.push.apply(R,o(e))},N=XMLHttpRequest.prototype.open,XMLHttpRequest.prototype.open=function(t,e){if(/(api\.)?twitter\.com\/(i\/api\/)?(2|graphql|1\.1)\//i.test(e)){var r=this.send;this.send=function(){var t=this.onreadystatechange;return this.onreadystatechange=function(){var e=this.readyState,r=this.responseText;if(e===XMLHttpRequest.DONE&&r)try{U(JSON.parse(r))}catch(t){console.log(t)}return t.apply(this,arguments)},r.apply(this,arguments)}}return N.apply(this,arguments)},function(t){new MutationObserver((function(e){e.forEach((function(e){e.addedNodes.forEach((function(e){if(e instanceof HTMLElement==!1)return!1;if("IMG"===e.nodeName){var r=e.closest("article[role='article']");if(r){var n=r.querySelector("[role='group']:last-child");n&&t({$image:e,$group:n})}}}))}))})).observe(document,{childList:!0,subtree:!0})}((function(t){var r=t.$group,n=t.$image,o=R.find((function(t){return n.src.indexOf(t.photo)>-1})),i=r.getAttribute("data-twitter-video-downloader-extension");if(o&&!i){r.setAttribute("data-twitter-video-downloader-extension","true");var c=r.querySelector("svg").getBoundingClientRect(),s=c.width,u=c.height,l=document.createElement("button");l.classList.add("extension-button"),l.setAttribute("role","button"),l.setAttribute("title","Download"),l.insertAdjacentHTML("beforeend",I.render('<div class="extension-button-container"> <div class="extension-button-hover"></div> <svg class="download-icon" width="{{ width }}" height="{{ height }}" viewBox="0 0 24 24" aria-hidden="true"> <g> <path d="M11.99 16l-5.7-5.7L7.7 8.88l3.29 3.3V2.59h2v9.59l3.3-3.3 1.41 1.42-5.71 5.7zM21 15l-.02 3.51c0 1.38-1.12 2.49-2.5 2.49H5.5C4.11 21 3 19.88 3 18.5V15h2v3.5c0 .28.22.5.5.5h12.98c.28 0 .5-.22.5-.5L19 15h2z"> </path> </g> </svg> <svg class="loading-icon" viewBox="0 0 32 32" aria-hidden="true" width="{{ width }}" height="{{ height }}"> <circle cx="16" cy="16" fill="none" r="14" stroke-width="4"></circle> <circle cx="16" cy="16" fill="none" r="14" stroke-width="4"></circle> </svg> <svg class="success-icon" viewBox="0 0 24 24" aria-hidden="true" width="{{ width }}" height="{{ height }}"> <g> <path d="M9 20c-.264 0-.52-.104-.707-.293l-4.785-4.785c-.39-.39-.39-1.023 0-1.414s1.023-.39 1.414 0l3.946 3.945L18.075 4.41c.32-.45.94-.558 1.395-.24.45.318.56.942.24 1.394L9.817 19.577c-.17.24-.438.395-.732.42-.028.002-.057.003-.085.003z"> </path> </g> </svg> </div>',{width:s,height:u})),r.appendChild(l),l.addEventListener("click",function(){var t=e(a().mark((function t(e){var r,n,i,c;return a().wrap((function(t){for(;;)switch(t.prev=t.next){case 0:e.preventDefault(),this.disabled=!0,this.classList.add("loading"),r=R.filter((function(t){return t.entityId===o.entityId})).filter((function(t,e,r){return e===r.findIndex((function(e){return e.id===t.id}))})),n=M(r),t.prev=5,n.s();case 7:if((i=n.n()).done){t.next=13;break}return c=i.value,t.next=11,f(c.video,c.text);case 11:t.next=7;break;case 13:t.next=18;break;case 15:t.prev=15,t.t0=t.catch(5),n.e(t.t0);case 18:return t.prev=18,n.f(),t.finish(18);case 21:this.classList.remove("loading"),this.classList.add("success");case 23:case"end":return t.stop()}}),t,this,[[5,15,18,21]])})));return function(e){return t.apply(this,arguments)}}())}}))})()})();
+
+var objectToString = Object.prototype.toString;
+var isArray = Array.isArray || function isArrayPolyfill (object) {
+  return objectToString.call(object) === '[object Array]';
+};
+
+function isFunction (object) {
+  return typeof object === 'function';
+}
+
+/**
+ * More correct typeof string handling array
+ * which normally returns typeof 'object'
+ */
+function typeStr (obj) {
+  return isArray(obj) ? 'array' : typeof obj;
+}
+
+function escapeRegExp (string) {
+  return string.replace(/[\-\[\]{}()*+?.,\\\^$|#\s]/g, '\\$&');
+}
+
+/**
+ * Null safe way of checking whether or not an object,
+ * including its prototype, has a given property
+ */
+function hasProperty (obj, propName) {
+  return obj != null && typeof obj === 'object' && (propName in obj);
+}
+
+/**
+ * Safe way of detecting whether or not the given thing is a primitive and
+ * whether it has the given property
+ */
+function primitiveHasOwnProperty (primitive, propName) {
+  return (
+    primitive != null
+    && typeof primitive !== 'object'
+    && primitive.hasOwnProperty
+    && primitive.hasOwnProperty(propName)
+  );
+}
+
+// Workaround for https://issues.apache.org/jira/browse/COUCHDB-577
+// See https://github.com/janl/mustache.js/issues/189
+var regExpTest = RegExp.prototype.test;
+function testRegExp (re, string) {
+  return regExpTest.call(re, string);
+}
+
+var nonSpaceRe = /\S/;
+function isWhitespace (string) {
+  return !testRegExp(nonSpaceRe, string);
+}
+
+var entityMap = {
+  '&': '&amp;',
+  '<': '&lt;',
+  '>': '&gt;',
+  '"': '&quot;',
+  "'": '&#39;',
+  '/': '&#x2F;',
+  '`': '&#x60;',
+  '=': '&#x3D;'
+};
+
+function escapeHtml (string) {
+  return String(string).replace(/[&<>"'`=\/]/g, function fromEntityMap (s) {
+    return entityMap[s];
+  });
+}
+
+var whiteRe = /\s*/;
+var spaceRe = /\s+/;
+var equalsRe = /\s*=/;
+var curlyRe = /\s*\}/;
+var tagRe = /#|\^|\/|>|\{|&|=|!/;
+
+/**
+ * Breaks up the given `template` string into a tree of tokens. If the `tags`
+ * argument is given here it must be an array with two string values: the
+ * opening and closing tags used in the template (e.g. [ "<%", "%>" ]). Of
+ * course, the default is to use mustaches (i.e. mustache.tags).
+ *
+ * A token is an array with at least 4 elements. The first element is the
+ * mustache symbol that was used inside the tag, e.g. "#" or "&". If the tag
+ * did not contain a symbol (i.e. {{myValue}}) this element is "name". For
+ * all text that appears outside a symbol this element is "text".
+ *
+ * The second element of a token is its "value". For mustache tags this is
+ * whatever else was inside the tag besides the opening symbol. For text tokens
+ * this is the text itself.
+ *
+ * The third and fourth elements of the token are the start and end indices,
+ * respectively, of the token in the original template.
+ *
+ * Tokens that are the root node of a subtree contain two more elements: 1) an
+ * array of tokens in the subtree and 2) the index in the original template at
+ * which the closing tag for that section begins.
+ *
+ * Tokens for partials also contain two more elements: 1) a string value of
+ * indendation prior to that tag and 2) the index of that tag on that line -
+ * eg a value of 2 indicates the partial is the third tag on this line.
+ */
+function parseTemplate (template, tags) {
+  if (!template)
+    return [];
+  var lineHasNonSpace = false;
+  var sections = [];     // Stack to hold section tokens
+  var tokens = [];       // Buffer to hold the tokens
+  var spaces = [];       // Indices of whitespace tokens on the current line
+  var hasTag = false;    // Is there a {{tag}} on the current line?
+  var nonSpace = false;  // Is there a non-space char on the current line?
+  var indentation = '';  // Tracks indentation for tags that use it
+  var tagIndex = 0;      // Stores a count of number of tags encountered on a line
+
+  // Strips all whitespace tokens array for the current line
+  // if there was a {{#tag}} on it and otherwise only space.
+  function stripSpace () {
+    if (hasTag && !nonSpace) {
+      while (spaces.length)
+        delete tokens[spaces.pop()];
+    } else {
+      spaces = [];
+    }
+
+    hasTag = false;
+    nonSpace = false;
+  }
+
+  var openingTagRe, closingTagRe, closingCurlyRe;
+  function compileTags (tagsToCompile) {
+    if (typeof tagsToCompile === 'string')
+      tagsToCompile = tagsToCompile.split(spaceRe, 2);
+
+    if (!isArray(tagsToCompile) || tagsToCompile.length !== 2)
+      throw new Error('Invalid tags: ' + tagsToCompile);
+
+    openingTagRe = new RegExp(escapeRegExp(tagsToCompile[0]) + '\\s*');
+    closingTagRe = new RegExp('\\s*' + escapeRegExp(tagsToCompile[1]));
+    closingCurlyRe = new RegExp('\\s*' + escapeRegExp('}' + tagsToCompile[1]));
+  }
+
+  compileTags(tags || mustache.tags);
+
+  var scanner = new Scanner(template);
+
+  var start, type, value, chr, token, openSection;
+  while (!scanner.eos()) {
+    start = scanner.pos;
+
+    // Match any text between tags.
+    value = scanner.scanUntil(openingTagRe);
+
+    if (value) {
+      for (var i = 0, valueLength = value.length; i < valueLength; ++i) {
+        chr = value.charAt(i);
+
+        if (isWhitespace(chr)) {
+          spaces.push(tokens.length);
+          indentation += chr;
+        } else {
+          nonSpace = true;
+          lineHasNonSpace = true;
+          indentation += ' ';
+        }
+
+        tokens.push([ 'text', chr, start, start + 1 ]);
+        start += 1;
+
+        // Check for whitespace on the current line.
+        if (chr === '\n') {
+          stripSpace();
+          indentation = '';
+          tagIndex = 0;
+          lineHasNonSpace = false;
+        }
+      }
+    }
+
+    // Match the opening tag.
+    if (!scanner.scan(openingTagRe))
+      break;
+
+    hasTag = true;
+
+    // Get the tag type.
+    type = scanner.scan(tagRe) || 'name';
+    scanner.scan(whiteRe);
+
+    // Get the tag value.
+    if (type === '=') {
+      value = scanner.scanUntil(equalsRe);
+      scanner.scan(equalsRe);
+      scanner.scanUntil(closingTagRe);
+    } else if (type === '{') {
+      value = scanner.scanUntil(closingCurlyRe);
+      scanner.scan(curlyRe);
+      scanner.scanUntil(closingTagRe);
+      type = '&';
+    } else {
+      value = scanner.scanUntil(closingTagRe);
+    }
+
+    // Match the closing tag.
+    if (!scanner.scan(closingTagRe))
+      throw new Error('Unclosed tag at ' + scanner.pos);
+
+    if (type == '>') {
+      token = [ type, value, start, scanner.pos, indentation, tagIndex, lineHasNonSpace ];
+    } else {
+      token = [ type, value, start, scanner.pos ];
+    }
+    tagIndex++;
+    tokens.push(token);
+
+    if (type === '#' || type === '^') {
+      sections.push(token);
+    } else if (type === '/') {
+      // Check section nesting.
+      openSection = sections.pop();
+
+      if (!openSection)
+        throw new Error('Unopened section "' + value + '" at ' + start);
+
+      if (openSection[1] !== value)
+        throw new Error('Unclosed section "' + openSection[1] + '" at ' + start);
+    } else if (type === 'name' || type === '{' || type === '&') {
+      nonSpace = true;
+    } else if (type === '=') {
+      // Set the tags for the next time around.
+      compileTags(value);
+    }
+  }
+
+  stripSpace();
+
+  // Make sure there are no open sections when we're done.
+  openSection = sections.pop();
+
+  if (openSection)
+    throw new Error('Unclosed section "' + openSection[1] + '" at ' + scanner.pos);
+
+  return nestTokens(squashTokens(tokens));
+}
+
+/**
+ * Combines the values of consecutive text tokens in the given `tokens` array
+ * to a single token.
+ */
+function squashTokens (tokens) {
+  var squashedTokens = [];
+
+  var token, lastToken;
+  for (var i = 0, numTokens = tokens.length; i < numTokens; ++i) {
+    token = tokens[i];
+
+    if (token) {
+      if (token[0] === 'text' && lastToken && lastToken[0] === 'text') {
+        lastToken[1] += token[1];
+        lastToken[3] = token[3];
+      } else {
+        squashedTokens.push(token);
+        lastToken = token;
+      }
+    }
+  }
+
+  return squashedTokens;
+}
+
+/**
+ * Forms the given array of `tokens` into a nested tree structure where
+ * tokens that represent a section have two additional items: 1) an array of
+ * all tokens that appear in that section and 2) the index in the original
+ * template that represents the end of that section.
+ */
+function nestTokens (tokens) {
+  var nestedTokens = [];
+  var collector = nestedTokens;
+  var sections = [];
+
+  var token, section;
+  for (var i = 0, numTokens = tokens.length; i < numTokens; ++i) {
+    token = tokens[i];
+
+    switch (token[0]) {
+      case '#':
+      case '^':
+        collector.push(token);
+        sections.push(token);
+        collector = token[4] = [];
+        break;
+      case '/':
+        section = sections.pop();
+        section[5] = token[2];
+        collector = sections.length > 0 ? sections[sections.length - 1][4] : nestedTokens;
+        break;
+      default:
+        collector.push(token);
+    }
+  }
+
+  return nestedTokens;
+}
+
+/**
+ * A simple string scanner that is used by the template parser to find
+ * tokens in template strings.
+ */
+function Scanner (string) {
+  this.string = string;
+  this.tail = string;
+  this.pos = 0;
+}
+
+/**
+ * Returns `true` if the tail is empty (end of string).
+ */
+Scanner.prototype.eos = function eos () {
+  return this.tail === '';
+};
+
+/**
+ * Tries to match the given regular expression at the current position.
+ * Returns the matched text if it can match, the empty string otherwise.
+ */
+Scanner.prototype.scan = function scan (re) {
+  var match = this.tail.match(re);
+
+  if (!match || match.index !== 0)
+    return '';
+
+  var string = match[0];
+
+  this.tail = this.tail.substring(string.length);
+  this.pos += string.length;
+
+  return string;
+};
+
+/**
+ * Skips all text until the given regular expression can be matched. Returns
+ * the skipped string, which is the entire tail if no match can be made.
+ */
+Scanner.prototype.scanUntil = function scanUntil (re) {
+  var index = this.tail.search(re), match;
+
+  switch (index) {
+    case -1:
+      match = this.tail;
+      this.tail = '';
+      break;
+    case 0:
+      match = '';
+      break;
+    default:
+      match = this.tail.substring(0, index);
+      this.tail = this.tail.substring(index);
+  }
+
+  this.pos += match.length;
+
+  return match;
+};
+
+/**
+ * Represents a rendering context by wrapping a view object and
+ * maintaining a reference to the parent context.
+ */
+function Context (view, parentContext) {
+  this.view = view;
+  this.cache = { '.': this.view };
+  this.parent = parentContext;
+}
+
+/**
+ * Creates a new context using the given view with this context
+ * as the parent.
+ */
+Context.prototype.push = function push (view) {
+  return new Context(view, this);
+};
+
+/**
+ * Returns the value of the given name in this context, traversing
+ * up the context hierarchy if the value is absent in this context's view.
+ */
+Context.prototype.lookup = function lookup (name) {
+  var cache = this.cache;
+
+  var value;
+  if (cache.hasOwnProperty(name)) {
+    value = cache[name];
+  } else {
+    var context = this, intermediateValue, names, index, lookupHit = false;
+
+    while (context) {
+      if (name.indexOf('.') > 0) {
+        intermediateValue = context.view;
+        names = name.split('.');
+        index = 0;
+
+        /**
+         * Using the dot notion path in `name`, we descend through the
+         * nested objects.
+         *
+         * To be certain that the lookup has been successful, we have to
+         * check if the last object in the path actually has the property
+         * we are looking for. We store the result in `lookupHit`.
+         *
+         * This is specially necessary for when the value has been set to
+         * `undefined` and we want to avoid looking up parent contexts.
+         *
+         * In the case where dot notation is used, we consider the lookup
+         * to be successful even if the last "object" in the path is
+         * not actually an object but a primitive (e.g., a string, or an
+         * integer), because it is sometimes useful to access a property
+         * of an autoboxed primitive, such as the length of a string.
+         **/
+        while (intermediateValue != null && index < names.length) {
+          if (index === names.length - 1)
+            lookupHit = (
+              hasProperty(intermediateValue, names[index])
+              || primitiveHasOwnProperty(intermediateValue, names[index])
+            );
+
+          intermediateValue = intermediateValue[names[index++]];
+        }
+      } else {
+        intermediateValue = context.view[name];
+
+        /**
+         * Only checking against `hasProperty`, which always returns `false` if
+         * `context.view` is not an object. Deliberately omitting the check
+         * against `primitiveHasOwnProperty` if dot notation is not used.
+         *
+         * Consider this example:
+         * ```
+         * Mustache.render("The length of a football field is {{#length}}{{length}}{{/length}}.", {length: "100 yards"})
+         * ```
+         *
+         * If we were to check also against `primitiveHasOwnProperty`, as we do
+         * in the dot notation case, then render call would return:
+         *
+         * "The length of a football field is 9."
+         *
+         * rather than the expected:
+         *
+         * "The length of a football field is 100 yards."
+         **/
+        lookupHit = hasProperty(context.view, name);
+      }
+
+      if (lookupHit) {
+        value = intermediateValue;
+        break;
+      }
+
+      context = context.parent;
+    }
+
+    cache[name] = value;
+  }
+
+  if (isFunction(value))
+    value = value.call(this.view);
+
+  return value;
+};
+
+/**
+ * A Writer knows how to take a stream of tokens and render them to a
+ * string, given a context. It also maintains a cache of templates to
+ * avoid the need to parse the same template twice.
+ */
+function Writer () {
+  this.templateCache = {
+    _cache: {},
+    set: function set (key, value) {
+      this._cache[key] = value;
+    },
+    get: function get (key) {
+      return this._cache[key];
+    },
+    clear: function clear () {
+      this._cache = {};
+    }
+  };
+}
+
+/**
+ * Clears all cached templates in this writer.
+ */
+Writer.prototype.clearCache = function clearCache () {
+  if (typeof this.templateCache !== 'undefined') {
+    this.templateCache.clear();
+  }
+};
+
+/**
+ * Parses and caches the given `template` according to the given `tags` or
+ * `mustache.tags` if `tags` is omitted,  and returns the array of tokens
+ * that is generated from the parse.
+ */
+Writer.prototype.parse = function parse (template, tags) {
+  var cache = this.templateCache;
+  var cacheKey = template + ':' + (tags || mustache.tags).join(':');
+  var isCacheEnabled = typeof cache !== 'undefined';
+  var tokens = isCacheEnabled ? cache.get(cacheKey) : undefined;
+
+  if (tokens == undefined) {
+    tokens = parseTemplate(template, tags);
+    isCacheEnabled && cache.set(cacheKey, tokens);
+  }
+  return tokens;
+};
+
+/**
+ * High-level method that is used to render the given `template` with
+ * the given `view`.
+ *
+ * The optional `partials` argument may be an object that contains the
+ * names and templates of partials that are used in the template. It may
+ * also be a function that is used to load partial templates on the fly
+ * that takes a single argument: the name of the partial.
+ *
+ * If the optional `config` argument is given here, then it should be an
+ * object with a `tags` attribute or an `escape` attribute or both.
+ * If an array is passed, then it will be interpreted the same way as
+ * a `tags` attribute on a `config` object.
+ *
+ * The `tags` attribute of a `config` object must be an array with two
+ * string values: the opening and closing tags used in the template (e.g.
+ * [ "<%", "%>" ]). The default is to mustache.tags.
+ *
+ * The `escape` attribute of a `config` object must be a function which
+ * accepts a string as input and outputs a safely escaped string.
+ * If an `escape` function is not provided, then an HTML-safe string
+ * escaping function is used as the default.
+ */
+Writer.prototype.render = function render (template, view, partials, config) {
+  var tags = this.getConfigTags(config);
+  var tokens = this.parse(template, tags);
+  var context = (view instanceof Context) ? view : new Context(view, undefined);
+  return this.renderTokens(tokens, context, partials, template, config);
+};
+
+/**
+ * Low-level method that renders the given array of `tokens` using
+ * the given `context` and `partials`.
+ *
+ * Note: The `originalTemplate` is only ever used to extract the portion
+ * of the original template that was contained in a higher-order section.
+ * If the template doesn't use higher-order sections, this argument may
+ * be omitted.
+ */
+Writer.prototype.renderTokens = function renderTokens (tokens, context, partials, originalTemplate, config) {
+  var buffer = '';
+
+  var token, symbol, value;
+  for (var i = 0, numTokens = tokens.length; i < numTokens; ++i) {
+    value = undefined;
+    token = tokens[i];
+    symbol = token[0];
+
+    if (symbol === '#') value = this.renderSection(token, context, partials, originalTemplate, config);
+    else if (symbol === '^') value = this.renderInverted(token, context, partials, originalTemplate, config);
+    else if (symbol === '>') value = this.renderPartial(token, context, partials, config);
+    else if (symbol === '&') value = this.unescapedValue(token, context);
+    else if (symbol === 'name') value = this.escapedValue(token, context, config);
+    else if (symbol === 'text') value = this.rawValue(token);
+
+    if (value !== undefined)
+      buffer += value;
+  }
+
+  return buffer;
+};
+
+Writer.prototype.renderSection = function renderSection (token, context, partials, originalTemplate, config) {
+  var self = this;
+  var buffer = '';
+  var value = context.lookup(token[1]);
+
+  // This function is used to render an arbitrary template
+  // in the current context by higher-order sections.
+  function subRender (template) {
+    return self.render(template, context, partials, config);
+  }
+
+  if (!value) return;
+
+  if (isArray(value)) {
+    for (var j = 0, valueLength = value.length; j < valueLength; ++j) {
+      buffer += this.renderTokens(token[4], context.push(value[j]), partials, originalTemplate, config);
+    }
+  } else if (typeof value === 'object' || typeof value === 'string' || typeof value === 'number') {
+    buffer += this.renderTokens(token[4], context.push(value), partials, originalTemplate, config);
+  } else if (isFunction(value)) {
+    if (typeof originalTemplate !== 'string')
+      throw new Error('Cannot use higher-order sections without the original template');
+
+    // Extract the portion of the original template that the section contains.
+    value = value.call(context.view, originalTemplate.slice(token[3], token[5]), subRender);
+
+    if (value != null)
+      buffer += value;
+  } else {
+    buffer += this.renderTokens(token[4], context, partials, originalTemplate, config);
+  }
+  return buffer;
+};
+
+Writer.prototype.renderInverted = function renderInverted (token, context, partials, originalTemplate, config) {
+  var value = context.lookup(token[1]);
+
+  // Use JavaScript's definition of falsy. Include empty arrays.
+  // See https://github.com/janl/mustache.js/issues/186
+  if (!value || (isArray(value) && value.length === 0))
+    return this.renderTokens(token[4], context, partials, originalTemplate, config);
+};
+
+Writer.prototype.indentPartial = function indentPartial (partial, indentation, lineHasNonSpace) {
+  var filteredIndentation = indentation.replace(/[^ \t]/g, '');
+  var partialByNl = partial.split('\n');
+  for (var i = 0; i < partialByNl.length; i++) {
+    if (partialByNl[i].length && (i > 0 || !lineHasNonSpace)) {
+      partialByNl[i] = filteredIndentation + partialByNl[i];
+    }
+  }
+  return partialByNl.join('\n');
+};
+
+Writer.prototype.renderPartial = function renderPartial (token, context, partials, config) {
+  if (!partials) return;
+  var tags = this.getConfigTags(config);
+
+  var value = isFunction(partials) ? partials(token[1]) : partials[token[1]];
+  if (value != null) {
+    var lineHasNonSpace = token[6];
+    var tagIndex = token[5];
+    var indentation = token[4];
+    var indentedValue = value;
+    if (tagIndex == 0 && indentation) {
+      indentedValue = this.indentPartial(value, indentation, lineHasNonSpace);
+    }
+    var tokens = this.parse(indentedValue, tags);
+    return this.renderTokens(tokens, context, partials, indentedValue, config);
+  }
+};
+
+Writer.prototype.unescapedValue = function unescapedValue (token, context) {
+  var value = context.lookup(token[1]);
+  if (value != null)
+    return value;
+};
+
+Writer.prototype.escapedValue = function escapedValue (token, context, config) {
+  var escape = this.getConfigEscape(config) || mustache.escape;
+  var value = context.lookup(token[1]);
+  if (value != null)
+    return (typeof value === 'number' && escape === mustache.escape) ? String(value) : escape(value);
+};
+
+Writer.prototype.rawValue = function rawValue (token) {
+  return token[1];
+};
+
+Writer.prototype.getConfigTags = function getConfigTags (config) {
+  if (isArray(config)) {
+    return config;
+  }
+  else if (config && typeof config === 'object') {
+    return config.tags;
+  }
+  else {
+    return undefined;
+  }
+};
+
+Writer.prototype.getConfigEscape = function getConfigEscape (config) {
+  if (config && typeof config === 'object' && !isArray(config)) {
+    return config.escape;
+  }
+  else {
+    return undefined;
+  }
+};
+
+var mustache = {
+  name: 'mustache.js',
+  version: '4.2.0',
+  tags: [ '{{', '}}' ],
+  clearCache: undefined,
+  escape: undefined,
+  parse: undefined,
+  render: undefined,
+  Scanner: undefined,
+  Context: undefined,
+  Writer: undefined,
+  /**
+   * Allows a user to override the default caching strategy, by providing an
+   * object with set, get and clear methods. This can also be used to disable
+   * the cache by setting it to the literal `undefined`.
+   */
+  set templateCache (cache) {
+    defaultWriter.templateCache = cache;
+  },
+  /**
+   * Gets the default or overridden caching object from the default writer.
+   */
+  get templateCache () {
+    return defaultWriter.templateCache;
+  }
+};
+
+// All high-level mustache.* functions use this writer.
+var defaultWriter = new Writer();
+
+/**
+ * Clears all cached templates in the default writer.
+ */
+mustache.clearCache = function clearCache () {
+  return defaultWriter.clearCache();
+};
+
+/**
+ * Parses and caches the given template in the default writer and returns the
+ * array of tokens it contains. Doing this ahead of time avoids the need to
+ * parse templates on the fly as they are rendered.
+ */
+mustache.parse = function parse (template, tags) {
+  return defaultWriter.parse(template, tags);
+};
+
+/**
+ * Renders the `template` with the given `view`, `partials`, and `config`
+ * using the default writer.
+ */
+mustache.render = function render (template, view, partials, config) {
+  if (typeof template !== 'string') {
+    throw new TypeError('Invalid template! Template should be a "string" ' +
+                        'but "' + typeStr(template) + '" was given as the first ' +
+                        'argument for mustache#render(template, view, partials)');
+  }
+
+  return defaultWriter.render(template, view, partials, config);
+};
+
+// Export the escaping function so that the user may override it.
+// See https://github.com/janl/mustache.js/issues/244
+mustache.escape = escapeHtml;
+
+// Export these mainly for testing, but also for advanced usage.
+mustache.Scanner = Scanner;
+mustache.Context = Context;
+mustache.Writer = Writer;
+
+/* harmony default export */ const mustache_mustache = (mustache);
+
+;// CONCATENATED MODULE: ./src/content/index.js
+
+
+
+
+function _createForOfIteratorHelper(o, allowArrayLike) { var it = typeof Symbol !== "undefined" && o[Symbol.iterator] || o["@@iterator"]; if (!it) { if (Array.isArray(o) || (it = content_unsupportedIterableToArray(o)) || allowArrayLike && o && typeof o.length === "number") { if (it) o = it; var i = 0; var F = function F() {}; return { s: F, n: function n() { if (i >= o.length) return { done: true }; return { done: false, value: o[i++] }; }, e: function e(_e) { throw _e; }, f: F }; } throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); } var normalCompletion = true, didErr = false, err; return { s: function s() { it = it.call(o); }, n: function n() { var step = it.next(); normalCompletion = step.done; return step; }, e: function e(_e2) { didErr = true; err = _e2; }, f: function f() { try { if (!normalCompletion && it["return"] != null) it["return"](); } finally { if (didErr) throw err; } } }; }
+
+function content_unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return content_arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return content_arrayLikeToArray(o, minLen); }
+
+function content_arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+
+
+
+
+
+
+
+var videoList = []; // 劫持 xhr，以获取特定 api 的数据
+
+xhr(function (response) {
+  console.log("[TEST LOG] onRequestDone response:", response); // 数据提取与加工
+
+  var requestVideos = parse(response);
+  console.log("[TEST LOG] onRequestDone requestVideos:", requestVideos);
+
+  if (requestVideos.length) {
+    videoList.push.apply(videoList, _toConsumableArray(requestVideos));
+  }
+});
+observe(function (_ref) {
+  var $group = _ref.$group,
+      $image = _ref.$image;
+  var findVideo = videoList.find(function (video) {
+    return $image.src.indexOf(video.photo) > -1;
+  });
+  var checkExtensionButton = $group.getAttribute("data-twitter-video-downloader-extension");
+
+  if (findVideo && !checkExtensionButton) {
+    $group.setAttribute("data-twitter-video-downloader-extension", "true");
+
+    var _$group$querySelector = $group.querySelector("svg").getBoundingClientRect(),
+        width = _$group$querySelector.width,
+        height = _$group$querySelector.height;
+
+    var $button = document.createElement("button");
+    $button.classList.add("extension-button");
+    $button.setAttribute("role", "button");
+    $button.setAttribute("title", "Download");
+    $button.insertAdjacentHTML("beforeend", mustache_mustache.render(content_button, {
+      width: width,
+      height: height
+    }));
+    $group.appendChild($button);
+    $button.addEventListener("click", /*#__PURE__*/function () {
+      var _ref2 = _asyncToGenerator( /*#__PURE__*/regenerator_default().mark(function _callee(event) {
+        var mixedVideos, _iterator, _step, video;
+
+        return regenerator_default().wrap(function _callee$(_context) {
+          while (1) {
+            switch (_context.prev = _context.next) {
+              case 0:
+                event.preventDefault();
+                this.disabled = true;
+                this.classList.add("loading");
+                mixedVideos = videoList.filter(function (v) {
+                  return v.entityId === findVideo.entityId;
+                }).filter(function (value, index, self) {
+                  return index === self.findIndex(function (find) {
+                    return find.id === value.id;
+                  });
+                });
+                _iterator = _createForOfIteratorHelper(mixedVideos);
+                _context.prev = 5;
+
+                _iterator.s();
+
+              case 7:
+                if ((_step = _iterator.n()).done) {
+                  _context.next = 13;
+                  break;
+                }
+
+                video = _step.value;
+                _context.next = 11;
+                return download(video.video, video.text);
+
+              case 11:
+                _context.next = 7;
+                break;
+
+              case 13:
+                _context.next = 18;
+                break;
+
+              case 15:
+                _context.prev = 15;
+                _context.t0 = _context["catch"](5);
+
+                _iterator.e(_context.t0);
+
+              case 18:
+                _context.prev = 18;
+
+                _iterator.f();
+
+                return _context.finish(18);
+
+              case 21:
+                this.classList.remove("loading");
+                this.classList.add("success");
+
+              case 23:
+              case "end":
+                return _context.stop();
+            }
+          }
+        }, _callee, this, [[5, 15, 18, 21]]);
+      }));
+
+      return function (_x) {
+        return _ref2.apply(this, arguments);
+      };
+    }());
+  }
+});
+})();
+
+// This entry need to be wrapped in an IIFE because it need to be in strict mode.
+(() => {
+"use strict";
+// extracted by mini-css-extract-plugin
+
+})();
+
+/******/ })()
+;

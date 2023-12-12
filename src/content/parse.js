@@ -1,6 +1,9 @@
 export default function (response) {
+  console.log("[TEST LOG] parseRequest response:", response);
+
   // tweet entites
   const entities = [...find(response, "extended_entities")];
+  console.log("[TEST LOG] parseRequest entities:", entities);
 
   // tweet card entites
   const cards = [...find(response, "string_value")]
@@ -27,6 +30,8 @@ export default function (response) {
     })
     .filter(Boolean);
 
+  console.log("[TEST LOG] parseRequest cards:", cards);
+
   return [...cards, ...entities]
     .filter(function (entity) {
       return entity.extended_entities.media.filter(checkMediaHasVideo).length;
@@ -47,12 +52,12 @@ export default function (response) {
           .shift();
         return {
           id: item.id_str,
+          type: item.type, // 资源类型，video or animated_gif
           entityId: entityId,
-          photo: item.media_url_https.substr(
-            0,
-            item.media_url_https.lastIndexOf(".")
-          ),
+          photo: item.media_url_https, // 视频封面图
           video: video.url,
+          width: item.original_info.width,
+          height: item.original_info.height,
           text: textify(entity),
         };
       });
@@ -103,5 +108,6 @@ function textify(entity) {
 }
 
 function checkMediaHasVideo(media) {
+  console.log("[TEST LOG] checkMediaHasVideo media.type:", media.type);
   return media.type === "video" || media.type === "animated_gif";
 }

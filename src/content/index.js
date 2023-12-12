@@ -6,8 +6,15 @@ import Button from "./button.html";
 import Mustache from "mustache";
 
 const videoList = [];
+
+// 劫持 xhr，以获取特定 api 的数据
 onRequestDone(function (response) {
+  console.log("[TEST LOG] onRequestDone response:", response);
+
+  // 数据提取与加工
   const requestVideos = parseRequest(response);
+  console.log("[TEST LOG] onRequestDone requestVideos:", requestVideos);
+
   if (requestVideos.length) {
     videoList.push(...requestVideos);
   }
